@@ -4,37 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/teal_200"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <include layout="@layout/toolbar">
 
     </include>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Seleccione Cantidad de Consejos"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"></TextView>
+
     <Spinner
-    android:id="@+id/Spinner"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.502"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.498" />
+        android:id="@+id/cantidad_sp"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp" />
 
     <Button
-        android:id="@+id/btn"
-        android:background="@color/teal_700"
-        android:textColor="@color/black"
+        android:id="@+id/solicitar_btn"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
         android:text="@string/btn_texto"
-        android:layout_height="wrap_content">
+        android:textColor="@color/black">
 
     </Button>
 
     <ListView
-
+        android:id="@+id/consejos_lv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
